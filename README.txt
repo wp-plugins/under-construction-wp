@@ -1,14 +1,14 @@
 === Plugin Name ===
 Contributors: johnnytee
 Donate link: http://www.seedprod.com
-Tags: wordpress under construction, under constructionwordpress Under Construction, wordpress maintenance mode, maintenance mode, Under Construction, , launch page, launch, maintenance, construction, offline, unavailable, newsletter, Under Construction page, landing page
+Tags: wordpress under construction, under construction,wordpress Under Construction, wordpress maintenance mode, maintenance mode, Under Construction, , launch page, launch, maintenance, construction, offline, unavailable, newsletter, Under Construction page, landing page
 Requires at least: 3.5.1
 Tested up to: 4.3.0
 Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-The #1 Under Construction, Under Construction Page & Maintenance Mode plugin for WordPress.
+A Simple Under Construction Page & Maintenance Mode plugin for WordPress.
 
 == Description ==
 

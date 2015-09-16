@@ -3,7 +3,7 @@ Contributors: johnnytee
 Donate link: http://www.seedprod.com
 Tags: wordpress under construction, under construction,wordpress Under Construction, wordpress maintenance mode, maintenance mode, Under Construction, , launch page, launch, maintenance, construction, offline, unavailable, newsletter, Under Construction page, landing page
 Requires at least: 3.5.1
-Tested up to: 4.3.0
+Tested up to: 4.3.1
 Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html

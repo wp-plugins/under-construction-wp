@@ -1,5 +1,5 @@
 === Plugin Name ===
-Contributors: johnnytee
+Contributors: webarize
 Donate link: http://www.seedprod.com
 Tags: wordpress under construction, under construction,wordpress Under Construction, wordpress maintenance mode, maintenance mode, Under Construction, , launch page, launch, maintenance, construction, offline, unavailable, newsletter, Under Construction page, landing page
 Requires at least: 3.5.1

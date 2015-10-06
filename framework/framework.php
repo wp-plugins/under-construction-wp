@@ -74,7 +74,7 @@ class SEED_UCP_ADMIN
             require_once(SEED_UCP_PLUGIN_PATH.'inc/default-settings.php');
 
             $_POST[ $_POST[ 'option_page' ] ] = $seed_ucp_settings_deafults[$_POST[ 'option_page' ]];
-            add_settings_error( 'general', 'seed_ucp-settings-reset', __( "Settings reset." ), 'updated' );
+            add_settings_error( 'general', 'seed_ucp-settings-reset', __( "Settings reset.", 'under-construction-wp' ), 'updated' );
         }
     }
 
@@ -113,8 +113,8 @@ class SEED_UCP_ADMIN
     function create_menus( )
     {
       $this->plugin_screen_hook_suffix = add_options_page(
-            __( "Under Construction", 'seed_ucp' ),
-            __( "Under Construction", 'seed_ucp' ),
+            __( "Under Construction", 'under-construction-wp' ),
+            __( "Under Construction", 'under-construction-wp' ),
             'manage_options',
             'seed_ucp',
             array( &$this , 'option_page' )
@@ -174,7 +174,7 @@ class SEED_UCP_ADMIN
                         $c++;
                     }
             }
-            echo '<a class="nav-tab seed_ucp-preview thickbox-preview" target="_blank" href="'.home_url().'?seed_ucp_preview=true&TB_iframe=true&width=640&height=632" title="'.__('&larr; Close Window', 'seed_ucp').'">'.__('Live Preview', 'seed_ucp').'</a>';
+            echo '<a class="nav-tab seed_ucp-preview thickbox-preview" target="_blank" href="'.home_url().'?seed_ucp_preview=true&TB_iframe=true&width=640&height=632" title="'.__('&larr; Close Window', 'under-construction-wp').'">'.__('Live Preview', 'under-construction-wp').'</a>';
             echo '<a class="nav-tab seed_csp4-support" style="background-color: #fcf8e3;" href="http://www.seedprod.com/ultimate-coming-soon-page-vs-coming-soon-pro/?utm_source=under-construction-plugin&amp;utm_medium=banner&amp;utm_campaign=under-construction-link-in-plugin" target="_blank"> Upgrade to Pro for more Professional Features</a>';
             echo '</h2>';
 
@@ -229,9 +229,9 @@ class SEED_UCP_ADMIN
                     ?>
                     <form action="options.php" method="post">
 
-                    <!-- <input name="submit" type="submit" value="<?php _e( 'Save All Changes', 'seed_ucp' ); ?>" class="button-primary"/> -->
+                    <!-- <input name="submit" type="submit" value="<?php _e( 'Save All Changes', 'under-construction-wp' ); ?>" class="button-primary"/> -->
                     <?php if(!empty($_GET['tab']) && $_GET['tab'] != 'seed_ucp_tab_3') { ?>
-                    <!-- <input id="reset" name="reset" type="submit" value="<?php _e( 'Reset Settings', 'seed_ucp' ); ?>" class="button-secondary"/>     -->
+                    <!-- <input id="reset" name="reset" type="submit" value="<?php _e( 'Reset Settings', 'under-construction-wp' ); ?>" class="button-secondary"/>     -->
                     <?php } ?>
 
                             <?php
@@ -278,8 +278,8 @@ class SEED_UCP_ADMIN
                         ?>
                     <?php if($show_submit): ?>
                     <p>
-                    <!-- <input name="submit" type="submit" value="<?php _e( 'Save All Changes', 'seed_ucp' ); ?>" class="button-primary"/> -->
-                    <!-- <input id="reset" name="reset" type="submit" value="<?php _e( 'Reset Settings', 'seed_ucp' ); ?>" class="button-secondary"/> -->
+                    <!-- <input name="submit" type="submit" value="<?php _e( 'Save All Changes', 'under-construction-wp' ); ?>" class="button-primary"/> -->
+                    <!-- <input id="reset" name="reset" type="submit" value="<?php _e( 'Reset Settings', 'under-construction-wp' ); ?>" class="button-secondary"/> -->
                     </p>
                     <?php endif; ?>
                     </form>
@@ -293,15 +293,15 @@ class SEED_UCP_ADMIN
                             <br> <br>
                             <div class="postbox support-postbox" style="background-color:#d9edf7">
                                 <div class="handlediv" title="Click to toggle"><br /></div>
-                                <h3 class="hndle"><span><?php _e('Plugin Support', 'seed_ucp') ?></span></h3>
+                                <h3 class="hndle"><span><?php _e('Plugin Support', 'under-construction-wp') ?></span></h3>
                                 <div class="inside">
                                     <div class="support-widget">
                                         <p>
-                                            <?php _e('Got a Question, Idea, Problem or Praise?') ?>
+                                            <?php _e('Got a Question, Idea, Problem or Praise?','under-construction-wp') ?>
                                         </p>
                                         <ul>
-                                            <li>&raquo; <a href="https://wordpress.org/support/plugin/under-construction-wp" target="_blank"><?php _e('Support Request', 'seed_ucp') ?></a></li>
-                                            <li>&raquo; <a href="http://support.seedprod.com/article/83-how-to-clear-wp-super-caches-cache" target="_blank"><?php _e('Common Caching Issues Resolutions', 'seed_ucp') ?></a></li>
+                                            <li>&raquo; <a href="https://wordpress.org/support/plugin/under-construction-wp" target="_blank"><?php _e('Support Request', 'under-construction-wp') ?></a></li>
+                                            <li>&raquo; <a href="http://support.seedprod.com/article/83-how-to-clear-wp-super-caches-cache" target="_blank"><?php _e('Common Caching Issues Resolutions', 'under-construction-wp') ?></a></li>
                                         </ul>
 
                                     </div>
@@ -310,17 +310,17 @@ class SEED_UCP_ADMIN
                             <?php if($this->plugin_type != 'pro'){ ?>
                                 <div class="postbox like-postbox" style="background-color:#d9edf7">
                                     <div class="handlediv" title="Click to toggle"><br /></div>
-                                    <h3 class="hndle"><span><?php _e('Show Some Love', 'seed_ucp') ?></span></h3>
+                                    <h3 class="hndle"><span><?php _e('Show Some Love', 'under-construction-wp') ?></span></h3>
                                     <div class="inside">
                                         <div class="like-widget">
-                                            <p><?php _e('Like this plugin? Show your support by:', 'seed_ucp')?></p>
+                                            <p><?php _e('Like this plugin? Show your support by:', 'under-construction-wp')?></p>
                                             <ul>
-                                                <li>&raquo; <a target="_blank" href="http://www.seedprod.com/features/?utm_source=under-construction-plugin&utm_medium=banner&utm_campaign=under-construction-link-in-plugin"><?php _e('Buy It', 'seed_ucp') ?></a></li>
+                                                <li>&raquo; <a target="_blank" href="http://www.seedprod.com/features/?utm_source=under-construction-plugin&utm_medium=banner&utm_campaign=under-construction-link-in-plugin"><?php _e('Buy It', 'under-construction-wp') ?></a></li>
 
-                                                <li>&raquo; <a target="_blank" href="https://wordpress.org/support/view/plugin-reviews/under-construction-wp?rate=5#postform"><?php _e('Rate It', 'seed_ucp') ?></a></li>
-                                                <li>&raquo; <a target="_blank" href="<?php echo "http://twitter.com/share?url=https%3A%2F%2Fwordpress.org%2Fplugins%2Funder-construction%2F&text=Check out this awesome %23WordPress Plugin I'm using, Under Construction by SeedProd"; ?>"><?php _e('Tweet It', 'seed_ucp') ?></a></li>
+                                                <li>&raquo; <a target="_blank" href="https://wordpress.org/support/view/plugin-reviews/under-construction-wp?rate=5#postform"><?php _e('Rate It', 'under-construction-wp') ?></a></li>
+                                                <li>&raquo; <a target="_blank" href="<?php echo "http://twitter.com/share?url=https%3A%2F%2Fwordpress.org%2Fplugins%2Funder-construction%2F&text=Check out this awesome %23WordPress Plugin I'm using, Under Construction by SeedProd"; ?>"><?php _e('Tweet It', 'under-construction-wp') ?></a></li>
 
-                                                <li>&raquo; <a href="https://www.seedprod.com/submit-site/"><?php _e('Submit your site to the Showcase', 'seed_ucp') ?></a></li>
+                                                <li>&raquo; <a href="https://www.seedprod.com/submit-site/"><?php _e('Submit your site to the Showcase', 'under-construction-wp') ?></a></li>
 
                                             </ul>
                                         </div>
@@ -331,7 +331,7 @@ class SEED_UCP_ADMIN
 
                                 <div class="postbox rss-postbox" style="background-color:#d9edf7">
     											<div class="handlediv" title="Click to toggle"><br /></div>
-    											<h3 class="hndle"><span><?php _e('SeedProd Blog', 'seed_ucp') ?></span></h3>
+    											<h3 class="hndle"><span><?php _e('SeedProd Blog', 'under-construction-wp') ?></span></h3>
     											<div class="inside">
 
     												<div class="rss-widget">
@@ -347,7 +347,7 @@ class SEED_UCP_ADMIN
     												?>
     												<ul>
     													<br>
-    												<li>&raquo; <a href="https://www.getdrip.com/forms/9414625/submissions/new"><?php _e('Subscribe by Email', 'seed_ucp') ?></a></li>
+    												<li>&raquo; <a href="https://www.getdrip.com/forms/9414625/submissions/new"><?php _e('Subscribe by Email', 'under-construction-wp') ?></a></li>
     											</ul>
     										</div>
     									</div>
@@ -366,7 +366,7 @@ class SEED_UCP_ADMIN
         <script>
             jQuery(document).ready(function($) {
                 $('#reset').click(function(e){
-                    if(!confirm('<?php _e( 'This tabs settings be deleted and reset to the defaults. Are you sure you want to reset?', 'seed_ucp' ); ?>')){
+                    if(!confirm('<?php _e( 'This tabs settings be deleted and reset to the defaults. Are you sure you want to reset?', 'under-construction-wp' ); ?>')){
                         e.preventDefault();
                     }
                 });
@@ -562,7 +562,7 @@ class SEED_UCP_ADMIN
             echo '</table>';
             if($show_submit): ?>
                 <p>
-                <input name="submit" type="submit" value="<?php _e( 'Save All Changes', 'seed_ucp' ); ?>" class="button-primary"/>
+                <input name="submit" type="submit" value="<?php _e( 'Save All Changes', 'under-construction-wp' ); ?>" class="button-primary"/>
                 </p>
             <?php endif;
             echo '</div>';

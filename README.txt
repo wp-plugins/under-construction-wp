@@ -4,7 +4,7 @@ Donate link: http://www.seedprod.com
 Tags: wordpress under construction, under constructionwordpress Under Construction, wordpress maintenance mode, maintenance mode, Under Construction, , launch page, launch, maintenance, construction, offline, unavailable, newsletter, Under Construction page, landing page
 Requires at least: 3.5.1
 Tested up to: 4.3.0
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -107,7 +107,10 @@ This is always a caching issue. Go to the caching plugin's setting page and clea
 4. Design Page
 
 == Changelog ==
-
+= 1.0.1 =
+Add option to remove overlay
+Fixed broken link
+language packs
 
 = 1.0.0 =
 Initial Commit

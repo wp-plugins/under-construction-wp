@@ -64,9 +64,9 @@ class SEED_UCP{
 
         $msg = '';
         if($status == '1'){
-        	$msg = __('Under Construction Mode Active', 'seed_ucp');
+        	$msg = __('Under Construction Mode Active', 'under-construction-wp');
         }elseif($status == '2'){
-        	$msg = __('Maintenance Mode Active', 'seed_ucp');
+        	$msg = __('Maintenance Mode Active', 'under-construction-wp');
         }
     	//Add the main siteadmin menu item
         $wp_admin_bar->add_menu( array(
@@ -101,7 +101,7 @@ class SEED_UCP{
     	extract(seed_ucp_get_settings());
 
         if(!isset($status)){
-            $err =  new WP_Error('error', __("Please enter your settings.", 'seed_ucp'));
+            $err =  new WP_Error('error', __("Please enter your settings.", 'under-construction-wp'));
             echo $err->get_error_message();
             exit();
         }

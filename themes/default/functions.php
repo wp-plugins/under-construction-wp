@@ -45,6 +45,10 @@ function seed_ucp_head() {
 	// Calculated Styles
 
 	$output .= '/* calculated styles */'."\n";
+
+	if(!empty($disable_overlay)){
+		$output .= 'body{background-color:rgba(0,0,0,0.0);}';
+	}
 	ob_start();
 	?>
 
@@ -93,7 +97,7 @@ function seed_ucp_credit() {
 
 	if ( !empty( $footer_credit ) ) {
 		$output = '<div id="seed-ucp-credit">';
-		$output .= '<a target="_blank" href="http://www.seedprod.com/?utm_source=under-construction-credit-link&utm_medium=banner&utm_campaign=under-construction-plugin-credit-link"><img src="'.plugins_url('under-construction',dirname('.')).'/themes/default/images/seedprod-credit.png"></a>';
+		$output .= '<a target="_blank" href="http://www.seedprod.com/?utm_source=under-construction-credit-link&utm_medium=banner&utm_campaign=under-construction-plugin-credit-link"><img src="'.plugins_url('under-construction-wp',dirname('.')).'/themes/default/images/seedprod-credit.png"></a>';
 		$output .= '</div>';
 	}
 
